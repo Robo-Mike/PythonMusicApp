@@ -1,0 +1,10 @@
+<h2>File upload</h2>
+<form action="" method="post" enctype="multipart/form-data" >
+	{# form is built up in django form object as its simple #}
+
+	{%csrf_token%}
+
+	{{form.comment}}<br/>
+    {{form.file}}<br/>
+    <input type="submit" value = "Upload"/>
+</form>
